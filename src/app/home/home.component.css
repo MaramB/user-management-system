@@ -1,0 +1,33 @@
+.home-container {
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #f8f9fa;
+  }
+  
+  .card {
+    border-radius: 15px;
+    padding: 20px;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+  }
+  
+  .card-title {
+    font-size: 24px;
+    font-weight: 600;
+  }
+  
+  .card-text {
+    font-size: 16px;
+    color: #6c757d;
+  }
+  
+  .btn-primary, .btn-secondary {
+    padding: 10px 20px;
+    font-size: 16px;
+  }
+  

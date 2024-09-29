@@ -2,6 +2,13 @@
     "HOME": "Home",
     "LOGIN": "Login",
     "LOGOUT": "Logout",
-    "SWITCH_LANGUAGE": "Switch to Arabic"
+    "SWITCH_LANGUAGE": "Switch to Arabic",
+    "WELCOME": "Welcome {{name}} to the Home Page",
+    "ADMIN_DASHBOARD": "Admin Dashboard",
+    "ADMIN_DESCRIPTION": "As an admin, you can manage users and settings.",
+    "MANAGE_USERS": "Manage All Users",
+    "USER_DASHBOARD": "User Dashboard",
+    "USER_DESCRIPTION": "Welcome! Here you can view and manage your profile.",
+    "VIEW_PROFILE": "View Profile"
   }
   

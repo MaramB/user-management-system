@@ -1,0 +1,29 @@
+<h1 class="mb-4">{{ "WELCOME" | translate : { name: currentUser?.name } }}</h1>
+
+<div class="row justify-content-center">
+  <!-- Admin Section -->
+  <div class="col-md-6" *ngIf="role === 'admin'">
+    <div class="card shadow-lg">
+      <div class="card-body">
+        <h2 class="card-title">{{ "ADMIN_DASHBOARD" | translate }}</h2>
+        <p class="card-text">{{ "ADMIN_DESCRIPTION" | translate }}</p>
+        <button class="btn btn-primary mt-3" (click)="navigateTo('admin')">
+          {{ "MANAGE_USERS" | translate }}
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- User Section -->
+  <div class="col-md-6" *ngIf="role !== 'admin'">
+    <div class="card shadow-lg">
+      <div class="card-body">
+        <h2 class="card-title">{{ "USER_DASHBOARD" | translate }}</h2>
+        <p class="card-text">{{ "USER_DESCRIPTION" | translate }}</p>
+        <button class="btn btn-secondary mt-3" (click)="navigateTo('user')">
+          {{ "VIEW_PROFILE" | translate }}
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
