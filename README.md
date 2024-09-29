@@ -1,27 +1,65 @@
-# WideBot
+# User Management System
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.7.
+This project is a simple role-based user management system built using **Angular**. It allows users to log in as either an **Admin** or a **User** and provides different functionality and views based on their role. The project also implements **localization** to support English and Arabic, allowing users to switch between the two languages dynamically.
 
-## Development server
+## Features
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- **Role-based access**: Admins can manage users (view, add, edit, delete) while users can view and update their profile.
+- **Authentication**: Simple login system using static credentials with session-based authentication.
+- **Dynamic Navigation**: Navigation changes based on the user's role.
+- **Localization**: Support for English and Arabic languages, with the ability to switch between them.
+- **Responsive Design**: The application is styled using **Bootstrap 5** to ensure a user-friendly and responsive UI.
+- **Global Error Handling**: Errors are caught and handled globally to provide a smoother user experience.
 
-## Code scaffolding
+## Installation
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+### Prerequisites
 
-## Build
+Before running this project, ensure you have the following installed:
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+- [Node.js](https://nodejs.org/en/download/)
+- [Angular CLI](https://angular.io/cli)
 
-## Running unit tests
+### Steps
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+1. Clone the repository:
 
-## Running end-to-end tests
+    ```bash
+    git clone https://github.com/MaramB/user-management-system.git
+    ```
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+2. Navigate to the project directory:
 
-## Further help
+    ```bash
+    cd user-management-system
+    ```
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+3. Install the dependencies:
+
+    ```bash
+    npm install
+    ```
+
+## Running the Project
+
+To run the project locally, use the following command:
+
+```bash
+ng serve
+```
+
+## Credentials
+
+For testing the application, you can use the following static credentials:
+
+### Admin Credentials
+```bash
+Email: admin@example.com
+Password: admin123
+```
+
+### User Credentials
+```bash
+Email: user@example.com
+Password: user123
+```
