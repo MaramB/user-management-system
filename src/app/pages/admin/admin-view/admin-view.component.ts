@@ -4,8 +4,8 @@ import { Router } from '@angular/router';
 import { Subject } from 'rxjs';
 import { takeUntil } from 'rxjs/operators';
 
-import { UserService } from '../services/user.service';
-import { ErrorHandlerService } from '../services/error-handler';
+import { UserService } from '../../../services/user.service';
+import { ErrorHandlerService } from '../../../services/error-handler';
 
 @Component({
   selector: 'app-admin',

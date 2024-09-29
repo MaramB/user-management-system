@@ -6,14 +6,14 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 
 import { AppComponent } from './app.component';
-import { LoginComponent } from './login/login.component';
-import { AdminViewComponent } from './admin-view/admin-view.component';
-import { UserViewComponent } from './user-view/user-view.component';
+import { LoginComponent } from './pages/login/login.component';
+import { AdminViewComponent } from './pages/admin/admin-view/admin-view.component';
+import { UserViewComponent } from './pages/users/user-view/user-view.component';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
-import { NavbarComponent } from './navbar/navbar.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
 import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
-import { HomeComponent } from './home/home.component';
+import { HomeComponent } from './pages/home/home.component';
 import { ToastrModule } from 'ngx-toastr';
 
 export function HttpLoaderFactory(http: HttpClient) {
