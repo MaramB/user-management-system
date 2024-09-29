@@ -1,0 +1,31 @@
+<div class="container user-container mt-5">
+  <h2 class="text-center mb-4">User Profile</h2>
+
+  <div class="card shadow-sm">
+    <div class="card-body">
+      <div *ngIf="!editMode">
+        <h5 class="card-title"><strong>Name:</strong> {{ user?.name }}</h5>
+        <p class="card-text"><strong>Email:</strong> {{ user?.email }}</p>
+        <button class="btn btn-primary" (click)="editUser()">Edit Details</button>
+      </div>
+
+      <div *ngIf="editMode" class="edit-user-form">
+        <h3 class="mb-3">Edit User Details</h3>
+        <form [formGroup]="editUserForm" (ngSubmit)="submitEdit()">
+          <div class="mb-3">
+            <label for="name" class="form-label">Name:</label>
+            <input id="name" formControlName="name" class="form-control" required />
+          </div>
+
+          <div class="mb-3">
+            <label for="email" class="form-label">Email:</label>
+            <input id="email" formControlName="email" class="form-control" required />
+          </div>
+
+          <button type="submit" class="btn btn-success">Save Changes</button>
+          <button type="button" class="btn btn-secondary mx-2" (click)="cancelEdit()">Cancel</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
